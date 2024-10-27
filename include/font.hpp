@@ -1,15 +1,21 @@
 #ifndef FONT_HPP
 #define FONT_HPP
 
+/*! \file font.hpp
+ This header file contains the declaration of the Font class.
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
 
 #include "glyph.hpp"
 
-/*! A Hershey vector font */
-
+/*! \class Font
+  \brief A Hershey vector font.
+*/
 class Font {
+
     std::string fname;  /*! The name of the file containing the glyph definitions. */
     std::string name;  /*! The name of the font. */
     int num_glyphs = 0;  /*! The number of glyphs in the font. */
@@ -20,45 +26,51 @@ class Font {
     int xheight;  /*! The x-height of the font. */
     
     private:
-    /*! Load font
-      Load the font's glyph definition files and generate and store the glyphs.
-     */
+    /*!
+      \brief Load the font's glyph definition files and generate and store the glyphs.
+    */
     void load_font();
 
     public:
-    /*! Default constructor.
-      Create a new font.
-     */
+    /*!
+      \brief Create a new font.
+    */
     Font();
 
-    /*! Constructor.
-      Create a new font.
-     */
+    /*!
+      \brief Create a new font.
+
+      \param  name The name of the font to create.
+    */
     Font(std::string name);
 
-    /*! Get fname
-      Get the font's filename
-     */
+    /*!
+      \brief Get the font's filename.
+    */
     std::string get_fname();
 
-    /*! Get name
-      Get the font's name
-     */
+    /*!
+      \brief Get the font's name.
+    */
     std::string get_name();
 
-    /*! Get num glyphs
-      Get the number of glyphs in the font.
-     */
+    /*!
+      \brief Get the number of glyphs in the font.
+    */
     int get_num_glyphs();
 
-    /*! Get glyph
-      Get the i'th glyph in the font.
-     */
+    /*!
+      \brief Get the i'th glyph in the font.
+
+      \param  i The index of the glyph to get.
+    */
     Glyph get_glyph(int i);
 
-    /*! Get glyph
-      Get the glyph corresponding to character c.
-     */
+    /*!
+      \brief Get the glyph corresponding to character c.
+
+      \param  c The character to get the glyph of.
+    */
     Glyph get_glyph(char c);
 };
 
