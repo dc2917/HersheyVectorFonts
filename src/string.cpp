@@ -2,7 +2,7 @@
 
 String::String(Font font, char *chars) {
     num_glyphs = strlen(chars);
-    for(int c=0; c<num_glyphs; ++c) {
+    for(int c = 0; c < num_glyphs; ++c) {
         glyphs[c] = font.get_glyph(chars[c]);
     }
 }
@@ -17,7 +17,7 @@ Glyph String::get_glyph(int i) {
 
 int String::get_width() {
     int width = 0;
-    for(int i=0; i<num_glyphs; ++i) {
+    for(int i = 0; i < num_glyphs; ++i) {
         width += glyphs[i].get_width();
     }
     return width;
@@ -25,7 +25,7 @@ int String::get_width() {
 
 int String::get_height() {
     int height = 0;
-    for(int i=0; i<num_glyphs; ++i) {
+    for(int i = 0; i < num_glyphs; ++i) {
         if(glyphs[i].get_height() > height) {
             height = glyphs[i].get_height();
         }

@@ -15,12 +15,8 @@ void FontFamily::load_fonts() {
     }
 }
 
-FontFamily::FontFamily(std::string name, bool rm, bool it, bool sc, bool gr) :
-    name(name),
-    has_rm(rm),
-    has_it(it),
-    has_sc(sc),
-    has_gr(gr) {
+FontFamily::FontFamily(std::string name, bool rm, bool it, bool sc, bool gr)
+    : name(name), has_rm(rm), has_it(it), has_sc(sc), has_gr(gr) {
     load_fonts();
 }
 

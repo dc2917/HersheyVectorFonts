@@ -5,8 +5,8 @@
  This header file contains the declaration of the FontFamily class.
 */
 
-#include <iostream>
 #include <fstream>
+#include <iostream>
 #include <string>
 #include <unordered_map>
 
@@ -18,12 +18,12 @@
 */
 class FontFamily {
 
-    std::string name;  /*! The name of the font family. */
-    bool has_rm;  /*! Whether the family contains a roman font. */
-    bool has_it;  /*! Whether the family contains an italic font. */
-    bool has_sc;  /*! Whether the family contains a script font. */
-    bool has_gr;  /*! Whether the family contains a Greek font. */
-    std::unordered_map<std::string, Font> fonts;  /*! The family's fonts. */
+    std::string name; /*! The name of the font family. */
+    bool has_rm; /*! Whether the family contains a roman font. */
+    bool has_it; /*! Whether the family contains an italic font. */
+    bool has_sc; /*! Whether the family contains a script font. */
+    bool has_gr; /*! Whether the family contains a Greek font. */
+    std::unordered_map<std::string, Font> fonts; /*! The family's fonts. */
 
     private:
     /*!

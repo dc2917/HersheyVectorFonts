@@ -5,26 +5,26 @@
  This header file contains the declaration of the Glyph class.
 */
 
-#include <iostream>
-#include <fstream>
-#include <string>
 #include <array>
+#include <fstream>
+#include <iostream>
+#include <string>
 
 /*! \class Glyph
   \brief A Hershey vector font glyph.
 */
 class Glyph {
 
-    std::string raw;  /*! The raw coordinate definition of the glyph. */
-    int cid;  /*! The unique identifier of the character. */
-    int lhp;  /*! The left-hand position of the character. */
-    int rhp;  /*! The right-hand position of the character. */
-    int nvert;  /*! The number of vertices in the character. */
-    int height;  /*! The height of the character. */
-    int width;  /*! The width of the character. */
+    std::string raw; /*! The raw coordinate definition of the glyph. */
+    int cid; /*! The unique identifier of the character. */
+    int lhp; /*! The left-hand position of the character. */
+    int rhp; /*! The right-hand position of the character. */
+    int nvert; /*! The number of vertices in the character. */
+    int height; /*! The height of the character. */
+    int width; /*! The width of the character. */
 
     public:
-    int coords[144][2];  /*! The x and y coordinates of the character's vertices. */
+    int coords[144][2]; /*! The x and y coordinates of the character's vertices. */
 
     /*!
       \brief Create a new glyph.
@@ -41,7 +41,7 @@ class Glyph {
     /*!
       \brief Get the raw coordinate definition of the glyph.
     */
-    std::string get_raw();    
+    std::string get_raw();
 
     /*!
       \brief Get the character's unique identifier.

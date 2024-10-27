@@ -15,7 +15,6 @@
 #define A5_P_WIDTH 420.94488189
 #define A5_P_HEIGHT 595.275590551
 
-
 /*!
   \brief Draw a glyph
 

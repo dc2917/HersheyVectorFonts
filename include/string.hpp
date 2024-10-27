@@ -5,9 +5,9 @@
  This header file contains the declaration of the String class
 */
 
-#include <iostream>
-#include <fstream>
 #include <cstring>
+#include <fstream>
+#include <iostream>
 
 #include "font.hpp"
 #include "glyph.hpp"
@@ -17,8 +17,8 @@
 */
 class String {
 
-    int num_glyphs;  /*! The number of glyphs in the string. */
-    Glyph glyphs[32];  /*! The glyphs in the string. */
+    int num_glyphs; /*! The number of glyphs in the string. */
+    Glyph glyphs[32]; /*! The glyphs in the string. */
 
     public:
     /*!
