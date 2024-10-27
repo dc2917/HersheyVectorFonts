@@ -95,28 +95,28 @@ $(function(){ initResizable(false); });
 <a href="glyph_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef GLYPH_HPP</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define GLYPH_HPP</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;array&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classGlyph.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="classGlyph.html">Glyph</a> {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::string raw;  </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">int</span> cid;  </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">int</span> lhp;  </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">int</span> rhp;  </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">int</span> nvert;  </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">int</span> height;  </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">int</span> width;  </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::string raw; </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">int</span> cid; </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">int</span> lhp; </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">int</span> rhp; </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">int</span> nvert; </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">int</span> height; </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">int</span> width; </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classGlyph.html#a21fd0e927776fb60b35ace77da564f2f">   27</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classGlyph.html#a21fd0e927776fb60b35ace77da564f2f">coords</a>[144][2];  </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classGlyph.html#a21fd0e927776fb60b35ace77da564f2f">   27</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classGlyph.html#a21fd0e927776fb60b35ace77da564f2f">coords</a>[144][2]; </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="classGlyph.html#a86197e8a8e21887a1592c10456833e80">Glyph</a>();</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="classGlyph.html#a86197e8a8e21887a1592c10456833e80">Glyph</a>(std::string raw);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::string <a class="code hl_function" href="classGlyph.html#a1f9d4fbb0deba3fcb999d1d15461a334">get_raw</a>();    </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::string <a class="code hl_function" href="classGlyph.html#a1f9d4fbb0deba3fcb999d1d15461a334">get_raw</a>();</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classGlyph.html#a9f42e4e54860aeb970d9b0bcd4ef7788">get_cid</a>();</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
@@ -145,13 +145,13 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclassGlyph_html_a4b916394990994e3a44eedd2953d3284"><div class="ttname"><a href="classGlyph.html#a4b916394990994e3a44eedd2953d3284">Glyph::get_height</a></div><div class="ttdeci">int get_height()</div><div class="ttdoc">Get the character's height.</div><div class="ttdef"><b>Definition</b> glyph.cpp:66</div></div>
 <div class="ttc" id="aclassGlyph_html_a86197e8a8e21887a1592c10456833e80"><div class="ttname"><a href="classGlyph.html#a86197e8a8e21887a1592c10456833e80">Glyph::Glyph</a></div><div class="ttdeci">Glyph()</div><div class="ttdoc">Create a new glyph.</div><div class="ttdef"><b>Definition</b> glyph.cpp:3</div></div>
 <div class="ttc" id="aclassGlyph_html_a9f42e4e54860aeb970d9b0bcd4ef7788"><div class="ttname"><a href="classGlyph.html#a9f42e4e54860aeb970d9b0bcd4ef7788">Glyph::get_cid</a></div><div class="ttdeci">int get_cid()</div><div class="ttdoc">Get the character's unique identifier.</div><div class="ttdef"><b>Definition</b> glyph.cpp:21</div></div>
-<div class="ttc" id="aclassGlyph_html_aac1804714b853da669fc30a3d02aed46"><div class="ttname"><a href="classGlyph.html#aac1804714b853da669fc30a3d02aed46">Glyph::print_coords_nparray</a></div><div class="ttdeci">void print_coords_nparray()</div><div class="ttdoc">Print the character's vertices' coordinates in numpy array format.</div><div class="ttdef"><b>Definition</b> glyph.cpp:54</div></div>
+<div class="ttc" id="aclassGlyph_html_aac1804714b853da669fc30a3d02aed46"><div class="ttname"><a href="classGlyph.html#aac1804714b853da669fc30a3d02aed46">Glyph::print_coords_nparray</a></div><div class="ttdeci">void print_coords_nparray()</div><div class="ttdoc">Print the character's vertices' coordinates in numpy array format.</div><div class="ttdef"><b>Definition</b> glyph.cpp:53</div></div>
 <div class="ttc" id="aclassGlyph_html_ad81cc5b0298ced291bd062b96abfc814"><div class="ttname"><a href="classGlyph.html#ad81cc5b0298ced291bd062b96abfc814">Glyph::print_info</a></div><div class="ttdeci">void print_info()</div><div class="ttdoc">Print information about the character.</div><div class="ttdef"><b>Definition</b> glyph.cpp:37</div></div>
 <div class="ttc" id="aclassGlyph_html_adeda59ee5071eebcd4b55cc7646f5486"><div class="ttname"><a href="classGlyph.html#adeda59ee5071eebcd4b55cc7646f5486">Glyph::get_nvert</a></div><div class="ttdeci">int get_nvert()</div><div class="ttdoc">Get the number of vertices making up the character.</div><div class="ttdef"><b>Definition</b> glyph.cpp:33</div></div>
 <div class="ttc" id="aclassGlyph_html_aec52758b51b733d8da99e54a41e05661"><div class="ttname"><a href="classGlyph.html#aec52758b51b733d8da99e54a41e05661">Glyph::get_width</a></div><div class="ttdeci">int get_width()</div><div class="ttdoc">Get the character's width.</div><div class="ttdef"><b>Definition</b> glyph.cpp:62</div></div>
 <div class="ttc" id="aclassGlyph_html_aef7d3442a8b1ea5d2f578a8882e5b9f7"><div class="ttname"><a href="classGlyph.html#aef7d3442a8b1ea5d2f578a8882e5b9f7">Glyph::get_lhp</a></div><div class="ttdeci">int get_lhp()</div><div class="ttdoc">Get the character's left-hand position.</div><div class="ttdef"><b>Definition</b> glyph.cpp:25</div></div>
 <div class="ttc" id="aclassGlyph_html_af4c254fcf01643e7ff5a62931cc108d5"><div class="ttname"><a href="classGlyph.html#af4c254fcf01643e7ff5a62931cc108d5">Glyph::get_rhp</a></div><div class="ttdeci">int get_rhp()</div><div class="ttdoc">Get the character's right-hand position.</div><div class="ttdef"><b>Definition</b> glyph.cpp:29</div></div>
-<div class="ttc" id="aclassGlyph_html_af531b48f6e8f2d4d3d79e8818525ad7e"><div class="ttname"><a href="classGlyph.html#af531b48f6e8f2d4d3d79e8818525ad7e">Glyph::print_coords</a></div><div class="ttdeci">void print_coords()</div><div class="ttdoc">Print the character's vertices' coordinates in numpy array format.</div><div class="ttdef"><b>Definition</b> glyph.cpp:48</div></div>
+<div class="ttc" id="aclassGlyph_html_af531b48f6e8f2d4d3d79e8818525ad7e"><div class="ttname"><a href="classGlyph.html#af531b48f6e8f2d4d3d79e8818525ad7e">Glyph::print_coords</a></div><div class="ttdeci">void print_coords()</div><div class="ttdoc">Print the character's vertices' coordinates in numpy array format.</div><div class="ttdef"><b>Definition</b> glyph.cpp:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
