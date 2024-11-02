@@ -1,6 +1,6 @@
 #include "string.hpp"
 
-String::String(Font font, char *chars) {
+String::String(Font font, const char *chars) {
     num_glyphs = strlen(chars);
     for(int c = 0; c < num_glyphs; ++c) {
         glyphs[c] = font.get_glyph(chars[c]);

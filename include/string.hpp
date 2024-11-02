@@ -27,7 +27,7 @@ class String {
       \param  font The name of the font to use.
       \param  chars The characters comprising the string.
     */
-    String(Font font, char *chars);
+    String(Font font, const char *chars);
 
     /*!
       \brief Get the number of glyphs in the string.
