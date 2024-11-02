@@ -25,14 +25,14 @@ void draw_glyphs(cairo_t *cr, String string, int x0, int y0, int scale) {
 
 void draw_font(cairo_t *cr, Font font, int width, int height) {
 
-    // Draw title
     int scale = 1;
-    // std::string fontname = font.get_name();
-    // String title(font, fontname);
-    // draw_glyphs(cr, title, position(0.5, width, title.get_width()), 20*scale, scale);
+
+    // Draw title
+    String title = String(font, font.get_name().c_str());
+    draw_glyphs(cr, title, position(0.5, width, title.get_width()), 20*scale, scale);
 
     // Draw glyphs
-    int w, h;
+    int w;
     int nchars = font.get_num_glyphs();
     int x0 = 8 * scale;
     int y0 = 100 * scale;
