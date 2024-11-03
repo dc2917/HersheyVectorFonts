@@ -48,7 +48,8 @@ class FontFamily {
     /*!
       \brief Get a font.
 
-      \param  The font to get.
+      \param  font The font to get.
+      \retval  The requested font.
     */
     Font get_font(std::string font);
 };

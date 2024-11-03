@@ -48,16 +48,22 @@ class Font {
 
     /*!
       \brief Get the font's filename.
+
+      \retval  The name of the file containing the font's raw glyph definitions.
     */
     std::string get_fname();
 
     /*!
       \brief Get the font's name.
+
+      \retval  The name of the font.
     */
     std::string get_name();
 
     /*!
       \brief Get the number of glyphs in the font.
+
+      \retval  The number of glyphs in the font.
     */
     int get_num_glyphs();
 
@@ -65,6 +71,7 @@ class Font {
       \brief Get the i'th glyph in the font.
 
       \param  i The index of the glyph to get.
+      \retval  The glyph at index i in the font.
     */
     Glyph get_glyph(int i);
 
@@ -72,6 +79,7 @@ class Font {
       \brief Get the glyph corresponding to character c.
 
       \param  c The character to get the glyph of.
+      \retval  The glyph of character c.
     */
     Glyph get_glyph(char c);
 };

@@ -42,26 +42,36 @@ class Glyph {
 
     /*!
       \brief Get the raw coordinate definition of the glyph.
+
+      \retval  The raw coordinate definition of the glyph.
     */
     std::string get_raw();
 
     /*!
       \brief Get the character's unique identifier.
+
+      \retval  The character's unique identifier.
     */
     int get_cid();
 
     /*!
       \brief Get the character's left-hand position.
+
+      \retval  The character's left-hand position.
     */
     int get_lhp();
 
     /*!
       \brief Get the character's right-hand position.
+
+      \retval  The character's right-hand position.
     */
     int get_rhp();
 
     /*!
       \brief Get the number of vertices making up the character.
+
+      \retval  The number of vertices making up the character.
     */
     int get_nvert();
 
@@ -82,11 +92,15 @@ class Glyph {
 
     /*!
       \brief Get the character's width.
+
+      \retval  The width of the character.
     */
     int get_width();
 
     /*!
       \brief Get the character's height.
+
+      \retval  The height of the character.
     */
     int get_height();
 };

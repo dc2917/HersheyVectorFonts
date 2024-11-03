@@ -33,6 +33,8 @@ class String {
 
     /*!
       \brief Get the number of glyphs in the string.
+
+      \retval  The number of glyphs in the string.
     */
     int get_nglyph();
 
@@ -40,16 +42,21 @@ class String {
       \brief Get a i'th glyph in the string.
 
       \param  i The index of the glyph to get.
+      \retval  The glyph at position i in the string.
     */
     Glyph get_glyph(int i);
 
     /*!
       \brief Get the width of the string.
+
+      \retval  The width of the string.
     */
     int get_width();
 
     /*!
       \brief Get the height of the string.
+
+      \retval  The height of the string.
     */
     int get_height();
 };
