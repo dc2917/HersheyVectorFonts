@@ -1,6 +1,7 @@
 #include "hershey_cairo.hpp"
 
 void draw_glyph(cairo_t *cr, Hershey::Glyph glyph, int x0, int y0, int scale) {
+
     int x1, x2, y1, y2;
     for(int v = 0; v < glyph.get_nvert() - 1; ++v) {
         x1 = glyph.coords[v][0];
@@ -18,7 +19,6 @@ void draw_glyph(cairo_t *cr, Hershey::Glyph glyph, int x0, int y0, int scale) {
 
 void draw_glyphs(cairo_t *cr, Hershey::String string, int x0, int y0, int scale) {
 
-    // if string.get_width()
     for(int c = 0; c < string.get_nglyph(); ++c) {
         draw_glyph(cr, string.get_glyph(c), x0, y0, scale);
         x0 += string.get_glyph(c).get_width() * scale;

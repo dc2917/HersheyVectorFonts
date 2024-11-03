@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Hershey Vector Fonts: String Class Reference</title>
+<title>Hershey Vector Fonts: Hershey::FontFamily Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,69 +82,78 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>Hershey</b></li><li class="navelem"><a class="el" href="classHershey_1_1FontFamily.html">FontFamily</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
-  <div class="headertitle"><div class="title">String Class Reference</div></div>
+  <div class="headertitle"><div class="title">Hershey::FontFamily Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>A character string comprising Hershey vector font glyphs.  
+<p>A Hershey vector font family.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="string_8hpp_source.html">string.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="fontfamily_8hpp_source.html">fontfamily.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acfe144882f8389fa3c22b6214e162ad6" id="r_acfe144882f8389fa3c22b6214e162ad6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfe144882f8389fa3c22b6214e162ad6">String</a> (<a class="el" href="classFont.html">Font</a> font, const char *chars)</td></tr>
-<tr class="memdesc:acfe144882f8389fa3c22b6214e162ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new string of a given font.  <br /></td></tr>
-<tr class="separator:acfe144882f8389fa3c22b6214e162ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56dd3ec6f633285819f6b801195419ae" id="r_a56dd3ec6f633285819f6b801195419ae"><td class="memItemLeft" align="right" valign="top"><a id="a56dd3ec6f633285819f6b801195419ae" name="a56dd3ec6f633285819f6b801195419ae"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_nglyph</b> ()</td></tr>
-<tr class="memdesc:a56dd3ec6f633285819f6b801195419ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of glyphs in the string. <br /></td></tr>
-<tr class="separator:a56dd3ec6f633285819f6b801195419ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af25f73a911a51761bb538ac624f20bd7" id="r_af25f73a911a51761bb538ac624f20bd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGlyph.html">Glyph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af25f73a911a51761bb538ac624f20bd7">get_glyph</a> (int i)</td></tr>
-<tr class="memdesc:af25f73a911a51761bb538ac624f20bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a i'th glyph in the string.  <br /></td></tr>
-<tr class="separator:af25f73a911a51761bb538ac624f20bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4802dc32db8da6c1ede3ade686997a40" id="r_a4802dc32db8da6c1ede3ade686997a40"><td class="memItemLeft" align="right" valign="top"><a id="a4802dc32db8da6c1ede3ade686997a40" name="a4802dc32db8da6c1ede3ade686997a40"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_width</b> ()</td></tr>
-<tr class="memdesc:a4802dc32db8da6c1ede3ade686997a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the width of the string. <br /></td></tr>
-<tr class="separator:a4802dc32db8da6c1ede3ade686997a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e51f6c30a0faef850250149dcf3b47" id="r_a45e51f6c30a0faef850250149dcf3b47"><td class="memItemLeft" align="right" valign="top"><a id="a45e51f6c30a0faef850250149dcf3b47" name="a45e51f6c30a0faef850250149dcf3b47"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_height</b> ()</td></tr>
-<tr class="memdesc:a45e51f6c30a0faef850250149dcf3b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the height of the string. <br /></td></tr>
-<tr class="separator:a45e51f6c30a0faef850250149dcf3b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d01a2fe7bfdf5402858f03d5423dc13" id="r_a1d01a2fe7bfdf5402858f03d5423dc13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d01a2fe7bfdf5402858f03d5423dc13">FontFamily</a> (std::string name, bool rm, bool it, bool sc, bool gr)</td></tr>
+<tr class="memdesc:a1d01a2fe7bfdf5402858f03d5423dc13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new font family.  <br /></td></tr>
+<tr class="separator:a1d01a2fe7bfdf5402858f03d5423dc13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f2320d9392a0791cfc8e3df3c987cc4" id="r_a5f2320d9392a0791cfc8e3df3c987cc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHershey_1_1Font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f2320d9392a0791cfc8e3df3c987cc4">get_font</a> (std::string font)</td></tr>
+<tr class="memdesc:a5f2320d9392a0791cfc8e3df3c987cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a font.  <br /></td></tr>
+<tr class="separator:a5f2320d9392a0791cfc8e3df3c987cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A character string comprising Hershey vector font glyphs. </p>
+<div class="textblock"><p>A Hershey vector font family. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="acfe144882f8389fa3c22b6214e162ad6" name="acfe144882f8389fa3c22b6214e162ad6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfe144882f8389fa3c22b6214e162ad6">&#9670;&#160;</a></span>String()</h2>
+<a id="a1d01a2fe7bfdf5402858f03d5423dc13" name="a1d01a2fe7bfdf5402858f03d5423dc13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d01a2fe7bfdf5402858f03d5423dc13">&#9670;&#160;</a></span>FontFamily()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String::String </td>
+          <td class="memname">FontFamily::FontFamily </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classFont.html">Font</a></td>          <td class="paramname"><span class="paramname"><em>font</em></span>, </td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>chars</em></span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>rm</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>it</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>sc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>gr</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a new string of a given font. </p>
-<p>The glyphs in the string.</p>
+<p>Create a new font family. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">font</td><td>The name of the font to use. </td></tr>
-    <tr><td class="paramname">chars</td><td>The characters comprising the string. </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the font family. </td></tr>
+    <tr><td class="paramname">rm</td><td>Whether the family contains a roman font. </td></tr>
+    <tr><td class="paramname">it</td><td>Whether the family contains a italic font. </td></tr>
+    <tr><td class="paramname">sc</td><td>Whether the family contains a script font. </td></tr>
+    <tr><td class="paramname">gr</td><td>Whether the family contains a Greek font. </td></tr>
   </table>
   </dd>
 </dl>
@@ -152,25 +161,25 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>get_height</b> ()</td>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af25f73a911a51761bb538ac624f20bd7" name="af25f73a911a51761bb538ac624f20bd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af25f73a911a51761bb538ac624f20bd7">&#9670;&#160;</a></span>get_glyph()</h2>
+<a id="a5f2320d9392a0791cfc8e3df3c987cc4" name="a5f2320d9392a0791cfc8e3df3c987cc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f2320d9392a0791cfc8e3df3c987cc4">&#9670;&#160;</a></span>get_font()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classGlyph.html">Glyph</a> String::get_glyph </td>
+          <td class="memname"><a class="el" href="classHershey_1_1Font.html">Font</a> FontFamily::get_font </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>font</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get a i'th glyph in the string. </p>
+<p>Get a font. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">i</td><td>The index of the glyph to get. </td></tr>
+    <tr><td class="paramname">The</td><td>font to get. </td></tr>
   </table>
   </dd>
 </dl>
@@ -178,8 +187,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>get_height</b> ()</td>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/<a class="el" href="string_8hpp_source.html">string.hpp</a></li>
-<li>src/<b>string.cpp</b></li>
+<li>include/<a class="el" href="fontfamily_8hpp_source.html">fontfamily.hpp</a></li>
+<li>src/<b>fontfamily.cpp</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

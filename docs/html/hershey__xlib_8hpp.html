@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Hershey Vector Fonts: include/hershey_cairo.hpp File Reference</title>
+<title>Hershey Vector Fonts: include/hershey_xlib.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,53 +90,38 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">hershey_cairo.hpp File Reference</div></div>
+  <div class="headertitle"><div class="title">hershey_xlib.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cairo-pdf.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;X11/Xlib.h&gt;</code><br />
+<code>#include &lt;X11/Xutil.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="font_8hpp_source.html">font.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="glyph_8hpp_source.html">glyph.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="string_8hpp_source.html">string.hpp</a>&quot;</code><br />
 </div>
-<p><a href="hershey__cairo_8hpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="hershey__xlib_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a0098a876c27869e6cc6fa65b46d68f28" id="r_a0098a876c27869e6cc6fa65b46d68f28"><td class="memItemLeft" align="right" valign="top"><a id="a0098a876c27869e6cc6fa65b46d68f28" name="a0098a876c27869e6cc6fa65b46d68f28"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>A4_P_WIDTH</b>&#160;&#160;&#160;595.275590551</td></tr>
-<tr class="separator:a0098a876c27869e6cc6fa65b46d68f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbba278c03a25c8d47dbc0962ab76aa3" id="r_afbba278c03a25c8d47dbc0962ab76aa3"><td class="memItemLeft" align="right" valign="top"><a id="afbba278c03a25c8d47dbc0962ab76aa3" name="afbba278c03a25c8d47dbc0962ab76aa3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>A4_P_HEIGHT</b>&#160;&#160;&#160;841.88976378</td></tr>
-<tr class="separator:afbba278c03a25c8d47dbc0962ab76aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48f244f7c1ee49bf4ca93a8587046e9f" id="r_a48f244f7c1ee49bf4ca93a8587046e9f"><td class="memItemLeft" align="right" valign="top"><a id="a48f244f7c1ee49bf4ca93a8587046e9f" name="a48f244f7c1ee49bf4ca93a8587046e9f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>A5_P_WIDTH</b>&#160;&#160;&#160;420.94488189</td></tr>
-<tr class="separator:a48f244f7c1ee49bf4ca93a8587046e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a926fdf029b799833c766e70ef342530b" id="r_a926fdf029b799833c766e70ef342530b"><td class="memItemLeft" align="right" valign="top"><a id="a926fdf029b799833c766e70ef342530b" name="a926fdf029b799833c766e70ef342530b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>A5_P_HEIGHT</b>&#160;&#160;&#160;595.275590551</td></tr>
-<tr class="separator:a926fdf029b799833c766e70ef342530b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af4aaa341097333121a18845f63160e6c" id="r_af4aaa341097333121a18845f63160e6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4aaa341097333121a18845f63160e6c">draw_glyph</a> (cairo_t *cr, <a class="el" href="classHershey_1_1Glyph.html">Hershey::Glyph</a> glyph, int x0, int y0, int scale)</td></tr>
-<tr class="memdesc:af4aaa341097333121a18845f63160e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a glyph.  <br /></td></tr>
-<tr class="separator:af4aaa341097333121a18845f63160e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a586cc025596177f8c6f177c508e05c83" id="r_a586cc025596177f8c6f177c508e05c83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a586cc025596177f8c6f177c508e05c83">draw_glyphs</a> (cairo_t *cr, <a class="el" href="classHershey_1_1String.html">Hershey::String</a> string, int x0, int y0, int scale)</td></tr>
-<tr class="memdesc:a586cc025596177f8c6f177c508e05c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a string of glyphs.  <br /></td></tr>
-<tr class="separator:a586cc025596177f8c6f177c508e05c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a166e99b32a8c1013d3166452bb5c9c5b" id="r_a166e99b32a8c1013d3166452bb5c9c5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a166e99b32a8c1013d3166452bb5c9c5b">draw_font</a> (cairo_t *cr, <a class="el" href="classHershey_1_1Font.html">Hershey::Font</a> font, int width, int height)</td></tr>
-<tr class="memdesc:a166e99b32a8c1013d3166452bb5c9c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the glyphs in a font.  <br /></td></tr>
-<tr class="separator:a166e99b32a8c1013d3166452bb5c9c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecc775bd1a8ee515b4954724181a472" id="r_afecc775bd1a8ee515b4954724181a472"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afecc775bd1a8ee515b4954724181a472">draw_glyph</a> (Display *display, Window *win, GC *gc, <a class="el" href="classHershey_1_1Glyph.html">Hershey::Glyph</a> glyph, int x0, int y0, int scale)</td></tr>
+<tr class="memdesc:afecc775bd1a8ee515b4954724181a472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a glyph.  <br /></td></tr>
+<tr class="separator:afecc775bd1a8ee515b4954724181a472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543b2c7f6f887a21da625364187c1303" id="r_a543b2c7f6f887a21da625364187c1303"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a543b2c7f6f887a21da625364187c1303">draw_glyphs</a> (Display *display, Window *win, GC *gc, <a class="el" href="classHershey_1_1String.html">Hershey::String</a> string, int x0, int y0, int scale)</td></tr>
+<tr class="memdesc:a543b2c7f6f887a21da625364187c1303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a string of glyphs.  <br /></td></tr>
+<tr class="separator:a543b2c7f6f887a21da625364187c1303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1adee9fd392f170534b86c95e07baf25" id="r_a1adee9fd392f170534b86c95e07baf25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1adee9fd392f170534b86c95e07baf25">draw_font</a> (Display *display, Window *win, GC *gc, <a class="el" href="classHershey_1_1Font.html">Hershey::Font</a> font, int width, int height)</td></tr>
+<tr class="memdesc:a1adee9fd392f170534b86c95e07baf25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the glyphs in a font.  <br /></td></tr>
+<tr class="separator:a1adee9fd392f170534b86c95e07baf25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf1727dd67f7d4f3d9a20c94c0d7cf9" id="r_aecf1727dd67f7d4f3d9a20c94c0d7cf9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecf1727dd67f7d4f3d9a20c94c0d7cf9">position</a> (float fraction, float x, float X)</td></tr>
 <tr class="memdesc:aecf1727dd67f7d4f3d9a20c94c0d7cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a fractional position.  <br /></td></tr>
 <tr class="separator:aecf1727dd67f7d4f3d9a20c94c0d7cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This header file contains the declaration of the functions for the Cairo interface. </p>
+<div class="textblock"><p>This header file contains the declaration of the functions for the XLib interface. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a166e99b32a8c1013d3166452bb5c9c5b" name="a166e99b32a8c1013d3166452bb5c9c5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a166e99b32a8c1013d3166452bb5c9c5b">&#9670;&#160;</a></span>draw_font()</h2>
+<a id="a1adee9fd392f170534b86c95e07baf25" name="a1adee9fd392f170534b86c95e07baf25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1adee9fd392f170534b86c95e07baf25">&#9670;&#160;</a></span>draw_font()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,7 +129,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void draw_font </td>
           <td>(</td>
-          <td class="paramtype">cairo_t *</td>          <td class="paramname"><span class="paramname"><em>cr</em></span>, </td>
+          <td class="paramtype">Display *</td>          <td class="paramname"><span class="paramname"><em>display</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Window *</td>          <td class="paramname"><span class="paramname"><em>win</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GC *</td>          <td class="paramname"><span class="paramname"><em>gc</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -167,16 +162,18 @@ Functions</h2></td></tr>
 <p>Draw the glyphs in a font. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cr</td><td>The Cairo context </td></tr>
-    <tr><td class="paramname">font</td><td>The font to draw </td></tr>
+    <tr><td class="paramname">display</td><td>The display </td></tr>
+    <tr><td class="paramname">win</td><td>The window </td></tr>
+    <tr><td class="paramname">gc</td><td>The graphics context </td></tr>
+    <tr><td class="paramname">font</td><td>The font </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="af4aaa341097333121a18845f63160e6c" name="af4aaa341097333121a18845f63160e6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4aaa341097333121a18845f63160e6c">&#9670;&#160;</a></span>draw_glyph()</h2>
+<a id="afecc775bd1a8ee515b4954724181a472" name="afecc775bd1a8ee515b4954724181a472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afecc775bd1a8ee515b4954724181a472">&#9670;&#160;</a></span>draw_glyph()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +181,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void draw_glyph </td>
           <td>(</td>
-          <td class="paramtype">cairo_t *</td>          <td class="paramname"><span class="paramname"><em>cr</em></span>, </td>
+          <td class="paramtype">Display *</td>          <td class="paramname"><span class="paramname"><em>display</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Window *</td>          <td class="paramname"><span class="paramname"><em>win</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GC *</td>          <td class="paramname"><span class="paramname"><em>gc</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -212,8 +219,9 @@ Functions</h2></td></tr>
 <p>Draw a glyph. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cr</td><td>The Cairo context </td></tr>
-    <tr><td class="paramname">glyph</td><td>The glyph to draw </td></tr>
+    <tr><td class="paramname">display</td><td>The display </td></tr>
+    <tr><td class="paramname">win</td><td>The window </td></tr>
+    <tr><td class="paramname">gc</td><td>The graphics context </td></tr>
     <tr><td class="paramname">x0</td><td>The starting x position </td></tr>
     <tr><td class="paramname">y0</td><td>The starting x position </td></tr>
     <tr><td class="paramname">scale</td><td>The amount to scale the glyph by </td></tr>
@@ -223,8 +231,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a586cc025596177f8c6f177c508e05c83" name="a586cc025596177f8c6f177c508e05c83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a586cc025596177f8c6f177c508e05c83">&#9670;&#160;</a></span>draw_glyphs()</h2>
+<a id="a543b2c7f6f887a21da625364187c1303" name="a543b2c7f6f887a21da625364187c1303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a543b2c7f6f887a21da625364187c1303">&#9670;&#160;</a></span>draw_glyphs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +240,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void draw_glyphs </td>
           <td>(</td>
-          <td class="paramtype">cairo_t *</td>          <td class="paramname"><span class="paramname"><em>cr</em></span>, </td>
+          <td class="paramtype">Display *</td>          <td class="paramname"><span class="paramname"><em>display</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Window *</td>          <td class="paramname"><span class="paramname"><em>win</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GC *</td>          <td class="paramname"><span class="paramname"><em>gc</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -260,7 +278,9 @@ Functions</h2></td></tr>
 <p>Draw a string of glyphs. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cr</td><td>The Cairo context </td></tr>
+    <tr><td class="paramname">display</td><td>The display </td></tr>
+    <tr><td class="paramname">win</td><td>The window </td></tr>
+    <tr><td class="paramname">gc</td><td>The graphics context </td></tr>
     <tr><td class="paramname">glyph</td><td>The string of glyphs to draw </td></tr>
     <tr><td class="paramname">x0</td><td>The starting x position </td></tr>
     <tr><td class="paramname">y0</td><td>The starting x position </td></tr>

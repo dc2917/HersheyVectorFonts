@@ -102,33 +102,36 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="font_8hpp.html">font.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="glyph_8hpp.html">glyph.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classString.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="classString.html">String</a> {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">int</span> num_glyphs; </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="classGlyph.html">Glyph</a> glyphs[32]; </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="classString.html#ad6ac8e09657a201e4790cd7f7c8ed99a">String</a>(<a class="code hl_class" href="classFont.html">Font</a> font, <span class="keywordtype">char</span> *chars);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classString.html#a56dd3ec6f633285819f6b801195419ae">get_nglyph</a>();</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="classGlyph.html">Glyph</a> <a class="code hl_function" href="classString.html#af25f73a911a51761bb538ac624f20bd7">get_glyph</a>(<span class="keywordtype">int</span> i);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classString.html#a4802dc32db8da6c1ede3ade686997a40">get_width</a>();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classString.html#a45e51f6c30a0faef850250149dcf3b47">get_height</a>();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>Hershey {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classHershey_1_1String.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="classHershey_1_1String.html">String</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">int</span> num_glyphs; </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_class" href="classHershey_1_1Glyph.html">Glyph</a> glyphs[32]; </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="classHershey_1_1String.html#acfe144882f8389fa3c22b6214e162ad6">String</a>(<a class="code hl_class" href="classHershey_1_1Font.html">Font</a> font, <span class="keyword">const</span> <span class="keywordtype">char</span> *chars);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classHershey_1_1String.html#a56dd3ec6f633285819f6b801195419ae">get_nglyph</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_class" href="classHershey_1_1Glyph.html">Glyph</a> <a class="code hl_function" href="classHershey_1_1String.html#af25f73a911a51761bb538ac624f20bd7">get_glyph</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classHershey_1_1String.html#a4802dc32db8da6c1ede3ade686997a40">get_width</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classHershey_1_1String.html#a45e51f6c30a0faef850250149dcf3b47">get_height</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassFont_html"><div class="ttname"><a href="classFont.html">Font</a></div><div class="ttdoc">A Hershey vector font.</div><div class="ttdef"><b>Definition</b> font.hpp:17</div></div>
-<div class="ttc" id="aclassGlyph_html"><div class="ttname"><a href="classGlyph.html">Glyph</a></div><div class="ttdoc">A Hershey vector font glyph.</div><div class="ttdef"><b>Definition</b> glyph.hpp:16</div></div>
-<div class="ttc" id="aclassString_html"><div class="ttname"><a href="classString.html">String</a></div><div class="ttdoc">A character string comprising Hershey vector font glyphs.</div><div class="ttdef"><b>Definition</b> string.hpp:18</div></div>
-<div class="ttc" id="aclassString_html_a45e51f6c30a0faef850250149dcf3b47"><div class="ttname"><a href="classString.html#a45e51f6c30a0faef850250149dcf3b47">String::get_height</a></div><div class="ttdeci">int get_height()</div><div class="ttdoc">Get the height of the string.</div><div class="ttdef"><b>Definition</b> string.cpp:26</div></div>
-<div class="ttc" id="aclassString_html_a4802dc32db8da6c1ede3ade686997a40"><div class="ttname"><a href="classString.html#a4802dc32db8da6c1ede3ade686997a40">String::get_width</a></div><div class="ttdeci">int get_width()</div><div class="ttdoc">Get the width of the string.</div><div class="ttdef"><b>Definition</b> string.cpp:18</div></div>
-<div class="ttc" id="aclassString_html_a56dd3ec6f633285819f6b801195419ae"><div class="ttname"><a href="classString.html#a56dd3ec6f633285819f6b801195419ae">String::get_nglyph</a></div><div class="ttdeci">int get_nglyph()</div><div class="ttdoc">Get the number of glyphs in the string.</div><div class="ttdef"><b>Definition</b> string.cpp:10</div></div>
-<div class="ttc" id="aclassString_html_ad6ac8e09657a201e4790cd7f7c8ed99a"><div class="ttname"><a href="classString.html#ad6ac8e09657a201e4790cd7f7c8ed99a">String::String</a></div><div class="ttdeci">String(Font font, char *chars)</div><div class="ttdoc">Create a new string of a given font.</div><div class="ttdef"><b>Definition</b> string.cpp:3</div></div>
-<div class="ttc" id="aclassString_html_af25f73a911a51761bb538ac624f20bd7"><div class="ttname"><a href="classString.html#af25f73a911a51761bb538ac624f20bd7">String::get_glyph</a></div><div class="ttdeci">Glyph get_glyph(int i)</div><div class="ttdoc">Get a i'th glyph in the string.</div><div class="ttdef"><b>Definition</b> string.cpp:14</div></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>} <span class="comment">// namespace Hershey</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassHershey_1_1Font_html"><div class="ttname"><a href="classHershey_1_1Font.html">Hershey::Font</a></div><div class="ttdoc">A Hershey vector font.</div><div class="ttdef"><b>Definition</b> font.hpp:19</div></div>
+<div class="ttc" id="aclassHershey_1_1Glyph_html"><div class="ttname"><a href="classHershey_1_1Glyph.html">Hershey::Glyph</a></div><div class="ttdoc">A Hershey vector font glyph.</div><div class="ttdef"><b>Definition</b> glyph.hpp:18</div></div>
+<div class="ttc" id="aclassHershey_1_1String_html"><div class="ttname"><a href="classHershey_1_1String.html">Hershey::String</a></div><div class="ttdoc">A character string comprising Hershey vector font glyphs.</div><div class="ttdef"><b>Definition</b> string.hpp:20</div></div>
+<div class="ttc" id="aclassHershey_1_1String_html_a45e51f6c30a0faef850250149dcf3b47"><div class="ttname"><a href="classHershey_1_1String.html#a45e51f6c30a0faef850250149dcf3b47">Hershey::String::get_height</a></div><div class="ttdeci">int get_height()</div><div class="ttdoc">Get the height of the string.</div><div class="ttdef"><b>Definition</b> string.cpp:28</div></div>
+<div class="ttc" id="aclassHershey_1_1String_html_a4802dc32db8da6c1ede3ade686997a40"><div class="ttname"><a href="classHershey_1_1String.html#a4802dc32db8da6c1ede3ade686997a40">Hershey::String::get_width</a></div><div class="ttdeci">int get_width()</div><div class="ttdoc">Get the width of the string.</div><div class="ttdef"><b>Definition</b> string.cpp:20</div></div>
+<div class="ttc" id="aclassHershey_1_1String_html_a56dd3ec6f633285819f6b801195419ae"><div class="ttname"><a href="classHershey_1_1String.html#a56dd3ec6f633285819f6b801195419ae">Hershey::String::get_nglyph</a></div><div class="ttdeci">int get_nglyph()</div><div class="ttdoc">Get the number of glyphs in the string.</div><div class="ttdef"><b>Definition</b> string.cpp:12</div></div>
+<div class="ttc" id="aclassHershey_1_1String_html_acfe144882f8389fa3c22b6214e162ad6"><div class="ttname"><a href="classHershey_1_1String.html#acfe144882f8389fa3c22b6214e162ad6">Hershey::String::String</a></div><div class="ttdeci">String(Font font, const char *chars)</div><div class="ttdoc">Create a new string of a given font.</div><div class="ttdef"><b>Definition</b> string.cpp:5</div></div>
+<div class="ttc" id="aclassHershey_1_1String_html_af25f73a911a51761bb538ac624f20bd7"><div class="ttname"><a href="classHershey_1_1String.html#af25f73a911a51761bb538ac624f20bd7">Hershey::String::get_glyph</a></div><div class="ttdeci">Glyph get_glyph(int i)</div><div class="ttdoc">Get a i'th glyph in the string.</div><div class="ttdef"><b>Definition</b> string.cpp:16</div></div>
 <div class="ttc" id="afont_8hpp_html"><div class="ttname"><a href="font_8hpp.html">font.hpp</a></div></div>
 <div class="ttc" id="aglyph_8hpp_html"><div class="ttname"><a href="glyph_8hpp.html">glyph.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

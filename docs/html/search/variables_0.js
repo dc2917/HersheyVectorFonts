@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['coords_0',['coords',['../classGlyph.html#a21fd0e927776fb60b35ace77da564f2f',1,'Glyph']]]
+  ['coords_0',['coords',['../classHershey_1_1Glyph.html#a9d94c335947eb3f30ded8fef1cf262c9',1,'Hershey::Glyph']]]
 ];
