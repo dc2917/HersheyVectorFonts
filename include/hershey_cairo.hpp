@@ -25,7 +25,7 @@
   \param  y0 The starting x position
   \param  scale The amount to scale the glyph by
 */
-void draw_glyph(cairo_t *cr, Glyph glyph, int x0, int y0, int scale);
+void draw_glyph(cairo_t *cr, Hershey::Glyph glyph, int x0, int y0, int scale);
 
 /*!
   \brief Draw a string of glyphs
@@ -36,7 +36,7 @@ void draw_glyph(cairo_t *cr, Glyph glyph, int x0, int y0, int scale);
   \param  y0 The starting x position
   \param  scale The amount to scale the glyphs by
 */
-void draw_glyphs(cairo_t *cr, String string, int x0, int y0, int scale);
+void draw_glyphs(cairo_t *cr, Hershey::String string, int x0, int y0, int scale);
 
 /*!
   \brief Draw the glyphs in a font
@@ -44,7 +44,7 @@ void draw_glyphs(cairo_t *cr, String string, int x0, int y0, int scale);
   \param  cr The Cairo context
   \param  font The font to draw
 */
-void draw_font(cairo_t *cr, Font font, int width, int height);
+void draw_font(cairo_t *cr, Hershey::Font font, int width, int height);
 
 /*!
   \brief Calculate a fractional position

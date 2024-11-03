@@ -1,5 +1,7 @@
 #include "fontfamily.hpp"
 
+using namespace Hershey;
+
 void FontFamily::load_fonts() {
     if(has_rm) {
         fonts["rm"] = Font(name + std::string("roman"));

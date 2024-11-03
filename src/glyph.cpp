@@ -1,5 +1,7 @@
 #include "glyph.hpp"
 
+using namespace Hershey;
+
 Glyph::Glyph() {
 }
 

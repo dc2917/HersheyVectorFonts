@@ -1,5 +1,7 @@
 #include "font.hpp"
 
+using namespace Hershey;
+
 void Font::load_font() {
     std::ifstream hf(fname);
     std::string line;
