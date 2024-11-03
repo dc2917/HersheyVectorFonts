@@ -13,68 +13,68 @@
 
 namespace Hershey {
 
-    /*! \class Font
-      \brief A Hershey vector font.
+/*! \class Font
+  \brief A Hershey vector font.
+*/
+class Font {
+
+    std::string fname; /*! The name of the file containing the glyph definitions. */
+    std::string name; /*! The name of the font. */
+    int num_glyphs = 0; /*! The number of glyphs in the font. */
+    Glyph glyphs[98]; /*! The font's glyphs. */
+    int baseline; /*! The baseline of the font. */
+    int descent; /*! The descent of the font. */
+    int ascent; /*! The ascent of the font. */
+    int xheight; /*! The x-height of the font. */
+
+    private:
+    /*!
+      \brief Load the font's glyph definition files and generate and store the glyphs.
     */
-    class Font {
+    void load_font();
 
-        std::string fname; /*! The name of the file containing the glyph definitions. */
-        std::string name; /*! The name of the font. */
-        int num_glyphs = 0; /*! The number of glyphs in the font. */
-        Glyph glyphs[98]; /*! The font's glyphs. */
-        int baseline; /*! The baseline of the font. */
-        int descent; /*! The descent of the font. */
-        int ascent; /*! The ascent of the font. */
-        int xheight; /*! The x-height of the font. */
+    public:
+    /*!
+      \brief Create a new font.
+    */
+    Font();
 
-        private:
-        /*!
-          \brief Load the font's glyph definition files and generate and store the glyphs.
-        */
-        void load_font();
+    /*!
+      \brief Create a new font.
 
-        public:
-        /*!
-          \brief Create a new font.
-        */
-        Font();
+      \param  name The name of the font to create.
+    */
+    Font(std::string name);
 
-        /*!
-          \brief Create a new font.
+    /*!
+      \brief Get the font's filename.
+    */
+    std::string get_fname();
 
-          \param  name The name of the font to create.
-        */
-        Font(std::string name);
+    /*!
+      \brief Get the font's name.
+    */
+    std::string get_name();
 
-        /*!
-          \brief Get the font's filename.
-        */
-        std::string get_fname();
+    /*!
+      \brief Get the number of glyphs in the font.
+    */
+    int get_num_glyphs();
 
-        /*!
-          \brief Get the font's name.
-        */
-        std::string get_name();
+    /*!
+      \brief Get the i'th glyph in the font.
 
-        /*!
-          \brief Get the number of glyphs in the font.
-        */
-        int get_num_glyphs();
+      \param  i The index of the glyph to get.
+    */
+    Glyph get_glyph(int i);
 
-        /*!
-          \brief Get the i'th glyph in the font.
+    /*!
+      \brief Get the glyph corresponding to character c.
 
-          \param  i The index of the glyph to get.
-        */
-        Glyph get_glyph(int i);
-
-        /*!
-          \brief Get the glyph corresponding to character c.
-
-          \param  c The character to get the glyph of.
-        */
-        Glyph get_glyph(char c);
-    };
-}
+      \param  c The character to get the glyph of.
+    */
+    Glyph get_glyph(char c);
+};
+} // namespace Hershey
 
 #endif
