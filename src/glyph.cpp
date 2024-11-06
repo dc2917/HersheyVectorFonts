@@ -38,27 +38,27 @@ int Glyph::get_nvert() {
 
 void Glyph::print_info() {
     std::cout << "Hershey character " << cid << " has " << nvert
-              << " vertices:" << std::endl
-              << "\t(" << lhp << ", " << rhp << ")" << std::endl;
+              << " vertices:" << '\n'
+              << "\t(" << lhp << ", " << rhp << ")" << '\n';
     for(int v = 0; v < nvert; ++v) {
         std::cout << "\t" << v + 1 << ": (" << coords[v][0] << ", " << coords[v][1]
-                  << ")" << std::endl;
+                  << ")" << '\n';
     }
 }
 
 void Glyph::print_coords() {
     for(int v = 0; v < nvert; ++v) {
-        std::cout << coords[v][0] << ", " << coords[v][1] << std::endl;
+        std::cout << coords[v][0] << ", " << coords[v][1] << '\n';
     }
 }
 
 void Glyph::print_coords_nparray() {
     std::cout << "array([";
     for(int v = 0; v < nvert - 1; ++v) {
-        std::cout << "\t[" << coords[v][0] << ", " << coords[v][1] << "]," << std::endl;
+        std::cout << "\t[" << coords[v][0] << ", " << coords[v][1] << "]," << '\n';
     }
     std::cout << "\t[" << coords[nvert - 1][0] << ", " << coords[nvert - 1][1] << "]])"
-              << std::endl;
+              << '\n';
 }
 
 int Glyph::get_width() {
