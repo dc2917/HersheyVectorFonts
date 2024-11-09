@@ -16,7 +16,7 @@ jobs:
     - name: Gather dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install googletest
+        sudo apt-get install libgtest-dev
     - name: Run unit tests
       run: |
         g++ -o runtests -I./include/ -lgtest_main -lgtest -lpthread tests/test_glyph.cpp src/glyph.cpp
