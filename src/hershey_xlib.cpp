@@ -45,7 +45,7 @@ void draw_font(
     w = title.get_width();
     h = title.get_height();
     draw_glyphs(
-        display, win, gc, title, width * scale / 2 - w / 2, h + 20 * scale, scale
+        display, win, gc, title, position(0.5, width, w*scale), h + 20 * scale, scale
     );
 
     // Draw glyphs
