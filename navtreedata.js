@@ -25,7 +25,9 @@
 var NAVTREE =
 [
   [ "Hershey Vector Fonts", "index.html", [
-    [ "Examples", "examples.html", "examples" ],
+    [ "Examples", "examples.html", [
+      [ "Viewing a font's glyphs", "showhfont.html", null ]
+    ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['string_69',['String',['../classHershey_1_1String.html#acfe144882f8389fa3c22b6214e162ad6',1,'Hershey::String']]]
+  ['string_0',['String',['../classHershey_1_1String.html#acfe144882f8389fa3c22b6214e162ad6',1,'Hershey::String']]]
 ];
