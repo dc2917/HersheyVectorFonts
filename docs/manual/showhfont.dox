@@ -1,0 +1,54 @@
+/*! \page showhfont Viewing a font's glyphs
+
+As an example of using the Cairo PDF interface, let's draw the glyphs of a font.
+
+`showhfont.cpp`
+\code{.cpp}
+#include "hershey.hpp"
+#include "hershey_cairo.hpp"
+
+int main(int argc, char *argv[]) {
+
+    // Load specified font
+    Hershey::Font font(argv[1]);
+
+    // Cairo initialisation
+    cairo_surface_t *surface;
+    cairo_t *cr;
+
+    // Create a PDF surface 720 points wide by 360 points high
+    surface = cairo_pdf_surface_create("hersheyfont.pdf", 720, 360);
+
+    cr = cairo_create(surface);
+
+    cairo_set_source_rgb(cr, 0, 0, 0);
+
+    cairo_set_line_width(cr, 1);
+
+    draw_font(cr, font, 720, 360);
+
+    cairo_stroke(cr);
+
+    cairo_show_page(cr);
+
+    // Cairo clean-up
+    cairo_surface_destroy(surface);
+    cairo_destroy(cr);
+
+    return 0;
+}
+\endcode
+
+Compile, e.g.
+
+\code{.sh}
+g++ -o showhfont $(pkg-config --cflags --libs cairo) -I./include/ src/showhfont.cpp src/glyph.cpp src/font.cpp src/string.cpp src/hershey_cairo.cpp
+\endcode
+
+Run, e.g.
+
+\code{.sh}
+./showhfont complexscript
+\endcode
+
+*/

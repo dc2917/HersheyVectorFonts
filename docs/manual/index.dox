@@ -1,0 +1,27 @@
+/*! \mainpage Hershey Vector Fonts
+
+This is a C++ library for working with the Hershey vector fonts. It contains classes for representing glyphs of the [Hershey vector fonts](https://en.wikipedia.org/wiki/Hershey_fonts), for strings of glyphs, and for the fonts themselves. Also provided are interfaces to the [Cairo](https://cairographics.org) graphics library and the [Xlib](https://x.org) library, for drawing using the Hershey vector fonts.
+
+Currently, only the occidental fonts are implemented: roman (simplex, complex, duplex and triplex); italic (complex and triplex); script (simplex and complex); Greek (simplex and complex) and gothic (English, German and Italian).
+
+My (slight) obsession with these fonts began when I kept seeing graphs in journal articles produced using software that had the Hershey fonts built in. The graphs always had a classy, old-school look to them, largely due to the use of the simplex and complex fonts in the title, axis labels and legend. Unfortunately, those plotting programs can be awkward to use, and more modern plotting software uses bitmap fonts, so I wanted to way to make these vector fonts available in other software.
+
+Given the Cairo interface, these fonts can be used with anything that can use Cairo as a back-end, such as GTK, Qt and OpenGL. This documentation contains some \ref examples of how to use this library to draw (write) with the Hershey fonts.
+
+---
+
+The Hershey fonts were originally created by Dr. A. V. Hershey while working at the U. S. National Bureau of Standards.
+
+The coordinate sets for the Hershey vector font characters were obtained from [http://paulbourke.net/dataformats/hershey/](http://paulbourke.net/dataformats/hershey/).
+
+The format of the font data provided there was originally created by:
+
+James Hurt\n
+Cognition, Inc.\n
+900 Technology Park Drive\n
+Billerica, MA 01821\n
+(mit-eddie!ci-dandelion!hurt)\n
+
+See [this](https://web.archive.org/web/20170716165314/https://ghostscript.com/doc/current/Hershey.htm) for further details.
+
+*/
