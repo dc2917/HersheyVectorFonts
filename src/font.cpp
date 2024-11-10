@@ -10,7 +10,7 @@ void Font::load_font() {
             glyphs[num_glyphs++] = Glyph(line);
         }
     } else {
-        std::cout << "Unable to open file " << fname << std::endl;
+        std::cout << "Unable to open file " << fname << '\n';
     }
 }
 
@@ -41,7 +41,7 @@ Glyph Font::get_glyph(int i) {
 Glyph Font::get_glyph(char c) {
     int i = static_cast<int>(c) - 32;
     if(i < 0 || i > 95) {
-        std::cout << "Invalid character " << i << std::endl;
+        std::cout << "Invalid character " << i << '\n';
         return glyphs[0];
     } else {
         return glyphs[i];
