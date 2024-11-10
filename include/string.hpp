@@ -20,16 +20,28 @@ namespace Hershey {
 class String {
 
     int num_glyphs; /*! The number of glyphs in the string. */
-    Glyph glyphs[32]; /*! The glyphs in the string. */
+    Glyph *glyphs; /*! The glyphs in the string. */
 
     public:
     /*!
-      \brief Create a new string of a given font.
+      \brief Create a new string.
+    */
+    String();
+
+    /*!
+      \brief Create a new string of glyphs of a given font.
 
       \param  font The name of the font to use.
       \param  chars The characters comprising the string.
     */
     String(Font font, const char *chars);
+
+    /*!
+      \brief Add two strings
+
+      \param  rhs The string to be appended.
+     */
+    String operator+(String rhs);
 
     /*!
       \brief Get the number of glyphs in the string.

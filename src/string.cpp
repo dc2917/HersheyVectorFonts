@@ -2,11 +2,32 @@
 
 using namespace Hershey;
 
+String::String() {
+}
+
 String::String(Font font, const char *chars) {
     num_glyphs = strlen(chars);
+    glyphs = new Glyph[num_glyphs];
     for(int c = 0; c < num_glyphs; ++c) {
         glyphs[c] = font.get_glyph(chars[c]);
     }
+}
+
+String String::operator+(String rhs) {
+
+    String sum;
+    sum.num_glyphs = (*this).get_nglyph() + rhs.get_nglyph();
+    sum.glyphs = new Glyph[sum.num_glyphs];
+
+    int c;
+    for(c = 0; c < (*this).get_nglyph(); ++c) {
+        sum.glyphs[c] = (*this).get_glyph(c);
+    }
+    for(c = 0; c < rhs.get_nglyph(); ++c) {
+        sum.glyphs[c + (*this).get_nglyph()] = rhs.get_glyph(c);
+    }
+
+    return sum;
 }
 
 int String::get_nglyph() {
