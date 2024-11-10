@@ -5,7 +5,6 @@
  This header file contains the declaration of the Glyph class.
 */
 
-#include <array>
 #include <fstream>
 #include <iostream>
 #include <string>
