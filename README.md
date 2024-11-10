@@ -2,6 +2,9 @@
 
 A C++ library for working with the Hershey vector fonts.
 
+[![Build and test](https://github.com/dc2917/HersheyVectorFonts/actions/workflows/tests.yml/badge.svg)](https://github.com/dc2917/HersheyVectorFonts/actions/workflows/tests.yml)
+
+
 ## Overview
 
 This library contains classes for representing glyphs of the [Hershey vector fonts](https://en.wikipedia.org/wiki/Hershey_fonts), for strings of glyphs, and for the fonts themselves. Also provided are interfaces to the [Cairo](https://cairographics.org) graphics library and the [Xlib](https://x.org) library, for drawing using the Hershey vector fonts.
