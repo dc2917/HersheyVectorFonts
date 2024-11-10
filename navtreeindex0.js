@@ -66,6 +66,7 @@ var NAVTREEINDEX0 =
 "index.html":[],
 "pages.html":[],
 "showhfont.html":[0,0],
+"showhtext.html":[0,1],
 "string_8hpp.html":[2,0,0,6],
 "string_8hpp_source.html":[2,0,0,6]
 };
