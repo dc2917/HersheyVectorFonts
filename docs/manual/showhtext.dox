@@ -1,0 +1,106 @@
+/*! \page showhtext Drawing to an X window
+
+As an example of using the X11/Xlib interface, let's create an X window and write some text on it.
+
+`hello_world_xlib.cpp`
+\code{.cpp}
+#include "hershey.hpp"
+#include "hershey_xlib.hpp"
+
+void close_x(Display *display, Window win, GC gc) {
+    XFreeGC(display, gc);
+    XDestroyWindow(display, win);
+    XCloseDisplay(display);
+    exit(1);
+}
+
+int main(int argc, char *argv[]) {
+
+    Hershey::Font roman("simplexroman");
+    Hershey::Font italic("complexitalic");
+
+    Hershey::String substr1(roman, "Hello, ");
+    Hershey::String substr2(italic, "world!");
+    Hershey::String text_to_display = substr1 + substr2;
+
+    Display *display;
+    int screen;
+    Window win;
+    GC gc;
+
+    unsigned long black, white;
+    XEvent event;
+    KeySym key;
+    char text[255];
+
+    display = XOpenDisplay((char *)0);
+    if(display == NULL) {
+        std::cout << "Error connecting to X server" << '\n';
+        exit(-1);
+    }
+
+    screen = DefaultScreen(display);
+    black = BlackPixel(display, screen);
+    white = WhitePixel(display, screen);
+
+    win = XCreateSimpleWindow(
+        display, XDefaultRootWindow(display), 0, 0, 1440, 720, 4, black, white
+    );
+
+    XMapWindow(display, win);
+    XSelectInput(display, win, KeyPressMask | ButtonPressMask | ExposureMask);
+
+    gc = XCreateGC(display, win, 0, 0);
+    XSetLineAttributes(display, gc, 1, LineSolid, CapRound, JoinRound);
+
+    while(1) {
+        XNextEvent(display, &event);
+        if(event.type == Expose && !event.xexpose.count) {
+            draw_glyphs(display, &win, &gc, text_to_display, 360, 360, 4);
+        }
+        if(event.type == KeyPress && XLookupString(&event.xkey, text, 255, &key, 0)) {
+            if(text[0] == 'q') {
+                close_x(display, win, gc);
+            }
+        }
+    }
+
+    return 0;
+}
+
+
+\endcode
+
+Note that the majority of the code here is Xlib boilerplate for creating the window to draw on, as well as the colours, line style and width to draw with.
+
+The statements using the Hershey fonts are simply:
+
+\code{.cpp}
+// Load the fonts we wish to use
+Hershey::Font roman("simplexroman");
+Hershey::Font italic("complexitalic");
+
+// Create two strings of glyphs to draw, each with a different font
+Hershey::String substr1(roman, "Hello, ");
+Hershey::String substr2(italic, "world!");
+
+// Concatenate the strings
+Hershey::String text_to_display = substr1 + substr2;
+
+// Draw the text starting at x=y=360, glyph sizes scaled x4
+draw_glyphs(display, &win, &gc, text_to_display, 360, 360, 4);
+\endcode
+
+Compile, e.g.
+
+\code{.sh}
+g++ -o hello_world_xlib -lX11 -I./include/ src/hello_world_xlib.cpp src/glyph.cpp src/font.cpp src/string.cpp src/hershey_xlib.cpp
+\endcode
+
+Run, e.g.
+
+\code{.sh}
+./hello_world_xlib
+\endcode
+
+*/

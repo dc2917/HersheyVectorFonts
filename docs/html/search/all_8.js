@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['s_20glyphs_0',['Viewing a font&apos;s glyphs',['../showhfont.html',1,'examples']]],
-  ['simplex_1',['Simplex',['../classSimplex.html',1,'']]],
-  ['string_2',['String',['../classHershey_1_1String.html',1,'Hershey::String'],['../classHershey_1_1String.html#acfe144882f8389fa3c22b6214e162ad6',1,'Hershey::String::String()']]],
-  ['string_2ehpp_3',['string.hpp',['../string_8hpp.html',1,'']]]
+  ['position_0',['position',['../hershey__cairo_8hpp.html#aecf1727dd67f7d4f3d9a20c94c0d7cf9',1,'position(float fraction, float x, float X):&#160;hershey_cairo.cpp'],['../hershey__xlib_8hpp.html#aecf1727dd67f7d4f3d9a20c94c0d7cf9',1,'position(float fraction, float x, float X):&#160;hershey_cairo.cpp']]],
+  ['print_5fcoords_1',['print_coords',['../classHershey_1_1Glyph.html#af531b48f6e8f2d4d3d79e8818525ad7e',1,'Hershey::Glyph']]],
+  ['print_5fcoords_5fnparray_2',['print_coords_nparray',['../classHershey_1_1Glyph.html#aac1804714b853da669fc30a3d02aed46',1,'Hershey::Glyph']]],
+  ['print_5finfo_3',['print_info',['../classHershey_1_1Glyph.html#ad81cc5b0298ced291bd062b96abfc814',1,'Hershey::Glyph']]]
 ];
