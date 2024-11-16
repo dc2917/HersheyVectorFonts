@@ -42,3 +42,5 @@ int main() {
     return 0;
 }
 ```
+
+See the [docs](https://dc2917.github.io/HersheyVectorFonts/index.html) for more details and examples, as well as the API documentation.
