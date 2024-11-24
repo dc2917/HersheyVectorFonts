@@ -5,6 +5,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "glyph.hpp", "glyph_8hpp.html", "glyph_8hpp" ],
     [ "hershey.hpp", "hershey_8hpp.html", null ],
     [ "hershey_cairo.hpp", "hershey__cairo_8hpp.html", "hershey__cairo_8hpp" ],
+    [ "hershey_svg.hpp", "hershey__svg_8hpp.html", "hershey__svg_8hpp" ],
     [ "hershey_xlib.hpp", "hershey__xlib_8hpp.html", "hershey__xlib_8hpp" ],
     [ "string.hpp", "string_8hpp.html", "string_8hpp" ]
 ];
