@@ -11,10 +11,16 @@
 #include "glyph.hpp"
 #include "string.hpp"
 
-#define A4_P_WIDTH 595.275590551
-#define A4_P_HEIGHT 841.88976378
-#define A5_P_WIDTH 420.94488189
-#define A5_P_HEIGHT 595.275590551
+#define A4_P_WIDTH 595.275590551   // 210 mm
+#define A4_P_HEIGHT 841.889763780  // 297 mm
+#define A5_P_WIDTH 419.527559055   // 148 mm
+#define A5_P_HEIGHT 595.275590551  // 210 mm
+#define A6_P_WIDTH 297.637795276   // 105 mm
+#define A6_P_HEIGHT 419.527559055  // 148 mm
+#define B6_P_WIDTH 354.330708661   // 125 mm
+#define B6_P_HEIGHT 498.897637795  // 176 mm
+#define L4x6_WIDTH 287.716535433   // 101.5 mm
+#define L4x6_HEIGHT 432.000000000  // 152.4 mm
 
 /*!
   \brief Draw a glyph
