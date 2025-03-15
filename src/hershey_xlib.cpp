@@ -1,8 +1,8 @@
 #include "hershey_xlib.hpp"
 
 void draw_glyph(
-    Display *display, Window *win, GC *gc, Hershey::Glyph glyph, int x0, int y0,
-    int scale
+    Display *display, Window *win, GC *gc, Hershey::Glyph glyph, float x0, float y0,
+    float scale
 ) {
 
     int x1, x2, y1, y2;
@@ -23,8 +23,8 @@ void draw_glyph(
 }
 
 void draw_glyphs(
-    Display *display, Window *win, GC *gc, Hershey::String string, int x0, int y0,
-    int scale
+    Display *display, Window *win, GC *gc, Hershey::String string, float x0, float y0,
+    float scale
 ) {
 
     for(int c = 0; c < string.get_nglyph(); ++c) {
@@ -45,7 +45,7 @@ void draw_font(
     w = title.get_width();
     h = title.get_height();
     draw_glyphs(
-        display, win, gc, title, position(0.5, width, w*scale), h + 20 * scale, scale
+        display, win, gc, title, position(0.5, width, w * scale), h + 20 * scale, scale
     );
 
     // Draw glyphs

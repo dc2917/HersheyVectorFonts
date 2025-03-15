@@ -23,8 +23,8 @@
   \param  scale The amount to scale the glyph by
 */
 void draw_glyph(
-    Display *display, Window *win, GC *gc, Hershey::Glyph glyph, int x0, int y0,
-    int scale
+    Display *display, Window *win, GC *gc, Hershey::Glyph glyph, float x0, float y0,
+    float scale
 );
 
 /*!
@@ -39,8 +39,8 @@ void draw_glyph(
   \param  scale The amount to scale the glyphs by
 */
 void draw_glyphs(
-    Display *display, Window *win, GC *gc, Hershey::String string, int x0, int y0,
-    int scale
+    Display *display, Window *win, GC *gc, Hershey::String string, float x0, float y0,
+    float scale
 );
 
 /*!
