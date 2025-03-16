@@ -31,7 +31,7 @@
   \param  y0 The starting x position
   \param  scale The amount to scale the glyph by
 */
-void draw_glyph(cairo_t *cr, Hershey::Glyph glyph, int x0, int y0, int scale);
+void draw_glyph(cairo_t *cr, Hershey::Glyph glyph, float x0, float y0, float scale);
 
 /*!
   \brief Draw a string of glyphs
@@ -42,7 +42,7 @@ void draw_glyph(cairo_t *cr, Hershey::Glyph glyph, int x0, int y0, int scale);
   \param  y0 The starting x position
   \param  scale The amount to scale the glyphs by
 */
-void draw_glyphs(cairo_t *cr, Hershey::String string, int x0, int y0, int scale);
+void draw_glyphs(cairo_t *cr, Hershey::String string, float x0, float y0, float scale);
 
 /*!
   \brief Draw the glyphs in a font
