@@ -3,7 +3,8 @@
 void write_header(std::ofstream &svg_file, int width, int height, int scale) {
     svg_file << "<!-- Hershey vector font SVGs -->\n";
     svg_file << "<!-- github.com/dc2917/HersheyVectorFonts -->\n";
-    svg_file << "<svg viewBox=\"0 0 " << width * scale << " " << height * scale << "\">\n";
+    svg_file << "<svg viewBox=\"0 0 " << width * scale << " " << height * scale
+             << "\">\n";
 }
 
 void write_footer(std::ofstream &svg_file) {
@@ -11,7 +12,7 @@ void write_footer(std::ofstream &svg_file) {
 }
 
 void draw_glyph(
-    std::ofstream &svg_file, Hershey::Glyph glyph, int x0, int y0, int scale
+    std::ofstream &svg_file, Hershey::Glyph glyph, float x0, float y0, float scale
 ) {
 
     int stroke_width = 1;
@@ -29,11 +30,12 @@ void draw_glyph(
         svg_file << x0 + (glyph.coords[v][0] - glyph.get_lhp()) * scale << " "
                  << y0 + glyph.coords[v][1] * scale << '\n';
     }
-    svg_file << "\t\" stroke=\"black\" stroke-width=\"" << stroke_width << "\" fill=\"none\"/>\n";
+    svg_file << "\t\" stroke=\"black\" stroke-width=\"" << stroke_width
+             << "\" fill=\"none\"/>\n";
 }
 
 void draw_glyphs(
-    std::ofstream &svg_file, Hershey::String string, int x0, int y0, int scale
+    std::ofstream &svg_file, Hershey::String string, float x0, float y0, float scale
 ) {
 
     for(int c = 0; c < string.get_nglyph(); ++c) {
@@ -53,7 +55,9 @@ void draw_font(std::ofstream &svg_file, Hershey::Font font, int width, int heigh
     Hershey::String title(font, font.get_name().c_str());
     w = title.get_width();
     h = title.get_height();
-    draw_glyphs(svg_file, title, position(0.5, width, w) * scale, h + 20 * scale, scale);
+    draw_glyphs(
+        svg_file, title, position(0.5, width, w) * scale, h + 20 * scale, scale
+    );
 
     // Draw glyphs
     int x0 = 8 * scale;

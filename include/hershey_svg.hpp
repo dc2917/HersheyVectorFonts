@@ -39,7 +39,7 @@ void write_footer(std::ofstream &svg_file);
   \param  scale The amount to scale the glyph by
 */
 void draw_glyph(
-    std::ofstream &svg_file, Hershey::Glyph glyph, int x0, int y0, int scale
+    std::ofstream &svg_file, Hershey::Glyph glyph, float x0, float y0, float scale
 );
 
 /*!
@@ -52,7 +52,7 @@ void draw_glyph(
   \param  scale The amount to scale the glyphs by
 */
 void draw_glyphs(
-    std::ofstream &svg_file, Hershey::String string, int x0, int y0, int scale
+    std::ofstream &svg_file, Hershey::String string, float x0, float y0, float scale
 );
 
 /*!
